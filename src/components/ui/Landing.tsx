@@ -1,6 +1,7 @@
 import AppointLists from './Appointment/AppointLists';
 import Hero from './Hero';
 import Stats from './Stats';
+import TodoList from './TodoList/TodoList';
 
 const Landing = () => {
   return (
@@ -9,7 +10,7 @@ const Landing = () => {
         <Hero />
       </div>
       <div className="col-span-full medium:col-span-1 medium:row-span-1 large:row-span-3">
-        <Hero />
+        <TodoList />
       </div>
       <div className="col-span-full medium:col-span-1  medium:row-start-2 medium:row-end-3 large:row-span-4">
         <AppointLists />
