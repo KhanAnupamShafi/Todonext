@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
+import Favicon from '../../public/images/Metadata/favicon.ico';
 import './globals.css';
 
 const poppins = Poppins({
@@ -10,6 +11,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: 'MediLab',
   description: 'The ultimate medicare service',
+  icons: [{ rel: 'icon', url: Favicon.src }],
 };
 
 export default function RootLayout({
@@ -19,9 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={poppins.className}
-        suppressHydrationWarning={true}>
+      <body className={poppins.className} suppressHydrationWarning={true}>
         {children}
       </body>
     </html>

@@ -53,10 +53,7 @@ const TodoList = () => {
         </div>
       </div>
       <div className="flex cursor-pointer items-center justify-between gap-4 py-6">
-        <div
-          className="custom-checkbox flex items-center gap-4 "
-          onClick={toggleSelectAll}
-        >
+        <div className="custom-checkbox flex items-center gap-4 ">
           <input
             type="checkbox"
             id="checkbox"
@@ -90,12 +87,11 @@ const TodoList = () => {
             <li
               key={item}
               className="custom-checkbox flex items-start gap-6 pb-6"
-              onClick={() => toggleCheckbox(index)}
             >
               <input
                 type="checkbox"
                 id={`checkbox-${index}`}
-                className="hidden"
+                className="hidden w-full"
                 checked={individualCheckboxes[index]}
               />
               <label
