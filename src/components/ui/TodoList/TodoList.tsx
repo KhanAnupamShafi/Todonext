@@ -37,7 +37,7 @@ const TodoList = () => {
             id="message"
             style={{ resize: 'none' }}
             rows={4}
-            className="block w-full rounded-lg border  bg-[#F9F9F9] p-2.5 text-sm text-gray-900 outline-none focus:border-[#FF797B] focus:ring-[#FF797B] dark:bg-opacity-50"
+            className="block w-full rounded-lg border  bg-[#F9F9F9] p-2.5 text-sm text-gray-900 caret-[#FF797B] outline-none focus:border-[#FF797B] focus:ring-[#FF797B] dark:bg-opacity-50"
           ></textarea>
           <button className="absolute bottom-2 right-2 block h-6 w-6 rounded-full bg-[#FF7594] p-0.5 large:hidden ">
             <Image fill src={'/images/button-secondary-default.svg'} alt="" />

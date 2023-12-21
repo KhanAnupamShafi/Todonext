@@ -27,7 +27,7 @@ const Hero = () => {
       <div className="grid grid-cols-4 gap-7 medium:pt-7 large:max-w-[718px]">
         {HERO_ITEMS.map((item) => (
           <div
-            className="shadow-customTwo col-span-2 flex flex-1 cursor-pointer flex-col  gap-2 rounded-lg border border-type-4 bg-white bg-opacity-10 p-2 text-dark transition-all duration-300 hover:shadow-xl dark:border-none dark:text-[#D1D5DB] medium:col-span-1"
+            className="shadow-customTwo hover:custom-hover hover:flip-horizontal hover:rotate-y-180 col-span-2 flex  flex-1 transform cursor-pointer flex-col gap-2 rounded-lg border border-type-4 bg-white bg-opacity-10 p-2 text-dark transition-all duration-300 hover:scale-110 hover:shadow-xl dark:border-none dark:text-[#D1D5DB] medium:col-span-1"
             key={item.title}
           >
             <div className="flex h-10 w-10  items-center justify-center rounded-md bg-[#FF2D2D99] dark:bg-white dark:bg-opacity-50">

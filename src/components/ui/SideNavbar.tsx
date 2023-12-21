@@ -129,7 +129,7 @@ const SideNavbar = () => {
                   !menuOpen ? 'block' : 'hidden'
                 }`}
               >
-                <div className="relative h-8 w-8 ">
+                <div className="relative h-8 w-8 cursor-pointer">
                   <Image fill src={'/images/plus.svg'} alt="" />
                 </div>
               </div>
