@@ -6,8 +6,10 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
+      fontSize: { xxs: '10px' },
       colors: {
         'hot-pink': '#ff7594',
         'orange-peach': '#FF7C65',
@@ -22,6 +24,7 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'check-mark': "url('/images/vector.svg')",
       },
       screens: {
         small: '389px',
@@ -39,7 +42,10 @@ const config: Config = {
           '50%': { transform: 'rotate(5deg)' },
         },
       },
-      boxShadow: { custom: '0px 2px 5px 0px rgba(0, 0, 0, 0.20);' },
+      boxShadow: {
+        custom: '0px 2px 5px 0px rgba(0, 0, 0, 0.20);',
+        customTwo: '0px 3.174px 3.967px 0px rgba(0, 0, 0, 0.20);',
+      },
     },
   },
   plugins: [],

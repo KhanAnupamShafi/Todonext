@@ -2,15 +2,21 @@ import Image from 'next/image';
 
 const Stats = () => {
   return (
-    <div className="rounded-md bg-white p-4 px-5 py-2 large:max-w-[452px]">
-      <div className="flex justify-between py-2">
-        <h2 className="text-sm font-semibold text-dark">Covid-19 Updates</h2>
+    <div className="rounded-md bg-white p-4 px-5 py-4 dark:bg-opacity-10 medium:py-2 large:max-w-[452px]">
+      <div className="flex flex-col justify-between gap-5 py-2 medium:flex-row">
+        <h2 className="text-xl font-semibold text-dark dark:text-white medium:text-sm">
+          Covid-19 Updates
+        </h2>
         <div>
-          <h2 className="text-sm font-semibold text-dark">10 September 2022</h2>
-          <p className="text-sm text-type-1">Thursday 10:00:00 AM</p>
+          <h2 className="text-sm font-semibold text-dark dark:text-white">
+            10 September 2022
+          </h2>
+          <p className="text-sm text-type-1 dark:text-white">
+            Thursday 10:00:00 AM
+          </p>
         </div>
       </div>
-      <div className="flex flex-col items-center  justify-between gap-14 medium:flex-row large:gap-0">
+      <div className="flex flex-col items-center justify-center gap-1 medium:flex-row medium:justify-between medium:gap-14 large:gap-0">
         <div className="relative h-[228px] w-[228px] ">
           <Image
             className="p-1.5"

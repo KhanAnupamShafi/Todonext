@@ -1,6 +1,7 @@
 export type SideNavItems = {
   title: string;
   icon?: JSX.Element | null;
+  iconDark?: JSX.Element | null;
   path: string;
   fill?: string;
 };
