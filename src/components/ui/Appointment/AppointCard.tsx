@@ -23,7 +23,7 @@ const AppointCard = ({ cardData }: { cardData: CardData }) => {
             {cardData.specialization}
           </p>
           <div>
-            <span className="text-xxs mr-4 rounded-md bg-white p-1 text-type-3 large:text-xs">
+            <span className="text-xxs mr-1 rounded-md bg-white p-1 text-type-3 medium:mr-4 large:text-xs">
               Slot: <span className="text-[#384449]">{cardData.slot}</span>
             </span>
             <span className="text-xxs rounded-md bg-white p-1 text-type-3 large:text-xs">

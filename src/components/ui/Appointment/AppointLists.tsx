@@ -9,7 +9,7 @@ const AppointLists = () => {
   };
   const dataArray = Array.from({ length: 4 }, (_, index) => index);
   return (
-    <div className="rounded-md bg-white  p-4 dark:bg-opacity-10 large:max-w-[452px]">
+    <div className="rounded-md bg-white p-2 dark:bg-opacity-10 medium:p-4 large:max-w-[452px]">
       <h1 className="text-sm font-medium text-dark dark:text-white medium:text-base">
         Upcoming Appointments
       </h1>
